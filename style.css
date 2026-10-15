@@ -1,0 +1,59 @@
+
+/* Bộ chọn element: định dạng toàn bộ trang */
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+/* Bộ chọn id: định dạng tiêu đề */
+#tieude {
+    color: blue;
+    text-align: center;
+}
+
+/* Bộ chọn class: định dạng đoạn văn */
+.gioithieu {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Bộ chọn element: định dạng tiêu đề cấp 2 */
+h2 {
+    color: darkgreen;
+}
+
+/* Bộ chọn class: mỗi sở thích có một màu khác nhau */
+.sothich1 {
+    color: red;
+}
+
+.sothich2 {
+    color: blue;
+}
+
+.sothich3 {
+    color: green;
+}
+
+/* Bộ chọn grouping: định dạng nhiều phần tử cùng lúc */
+h1, h2 {
+    font-weight: bold;
+}
+
+/* Định dạng nút bấm */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Pseudo-class: hiệu ứng khi di chuột vào nút */
+button:hover {
+    background-color: #0056b3;
+}
