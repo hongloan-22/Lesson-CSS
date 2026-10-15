@@ -1,0 +1,17 @@
+
+/* Phần 3: External CSS */
+.external {
+    color: green;
+}
+
+/* Định dạng chung cho trang web */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 30px;
+}
+
+h1 {
+    color: #333333;
+    text-align: center;
+}
