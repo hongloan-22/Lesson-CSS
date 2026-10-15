@@ -1,0 +1,164 @@
+
+/* Định dạng chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: linear-gradient(
+        135deg,
+        #f0f4f8,
+        #e0f2fe
+    );
+}
+
+/* Định dạng tiêu đề */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 5px solid #2e7d32;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Bố cục nội dung */
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+/* Các phần nội dung */
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 25px;
+    border: 1px solid #d9e2ec;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #2e7d32;
+    border-bottom: 2px solid #a5d6a7;
+    padding-bottom: 8px;
+}
+
+/* Ảnh đại diện */
+.profile {
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4CAF50;
+    margin: 10px;
+}
+
+/* Danh sách sở thích */
+.hobbies ul {
+    list-style-type: square;
+    display: inline-block;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.hobbies li {
+    margin: 8px 0;
+}
+
+/* Mục tiêu học tập */
+.goals p {
+    text-align: justify;
+}
+
+/* Bảng thông tin liên hệ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th,
+td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    color: #333333;
+}
+
+td a {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Chân trang */
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Hiển thị trên điện thoại */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .avatar {
+        width: 125px;
+        height: 125px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+        overflow-wrap: anywhere;
+    }
+}
