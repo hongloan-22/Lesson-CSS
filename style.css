@@ -1,0 +1,252 @@
+/* Thiết lập chung */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --ink: #1d2a3a;
+    --muted: #64748b;
+    --paper: #f3f6fb;
+    --accent: #4f46e5;
+    --line: #e4eaf3;
+}
+
+body {
+    margin: 0;
+    padding: 32px 18px;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: min(900px, 100%);
+    margin: 0 auto;
+}
+
+.page-header {
+    padding: 28px 30px;
+    margin-bottom: 22px;
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(135deg, #3730a3, #6366f1);
+    box-shadow: 0 12px 30px rgba(49, 46, 129, 0.16);
+}
+
+.eyebrow,
+.section-label {
+    margin: 0 0 8px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+}
+
+.page-header h1 {
+    margin: 0 0 8px;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    line-height: 1.15;
+}
+
+.page-header p:last-child {
+    max-width: 620px;
+    margin-bottom: 0;
+    color: #e0e7ff;
+}
+
+.demo-card {
+    margin: 18px 0;
+    padding: 24px 28px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: 0 5px 16px rgba(30, 41, 59, 0.035);
+}
+
+.demo-card h2 {
+    margin: 0 0 16px;
+    font-size: 1.2rem;
+}
+
+.demo-card h3 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+}
+
+ul,
+ol {
+    padding-left: 28px;
+}
+
+li {
+    margin: 7px 0;
+}
+
+/* 1. list-style-type */
+.square-list {
+    list-style-type: square;
+}
+
+/* 2. Số La Mã viết hoa */
+.roman-list {
+    list-style-type: upper-roman;
+}
+
+/* 3. Hình ảnh làm dấu đánh dấu */
+.image-list {
+    list-style-image: url("images/check.svg");
+    padding-left: 30px;
+}
+
+/* 4. So sánh vị trí dấu đánh dấu */
+.position-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.position-grid > div {
+    min-width: 0;
+    padding: 16px;
+    border-radius: 12px;
+    background: #f8fafc;
+}
+
+.outside-list {
+    list-style-position: outside;
+    padding-left: 24px;
+}
+
+.inside-list {
+    list-style-position: inside;
+    padding-left: 12px;
+}
+
+/* 5. Thuộc tính rút gọn: type, position, image */
+.shorthand-list {
+    list-style: circle inside url("images/check.svg");
+    padding: 14px 18px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+/* 6. Màu nền, màu chữ, padding và margin */
+.language-list {
+    list-style-type: square;
+    margin: 0;
+    padding: 16px 20px 16px 42px;
+    color: #164e63;
+    background-color: #ecfeff;
+    border: 1px solid #a5f3fc;
+    border-radius: 12px;
+}
+
+.language-list li {
+    margin: 8px 0;
+    padding: 5px 8px;
+}
+
+/* 7. Bài tập tổng hợp */
+.roadmap-card {
+    overflow: hidden;
+    border: 1px solid #d9ddff;
+    background: linear-gradient(180deg, #ffffff, #f8f8ff);
+}
+
+.section-label {
+    color: var(--accent);
+}
+
+.roadmap-card h2 {
+    margin-bottom: 5px;
+    font-size: 1.55rem;
+}
+
+.roadmap-intro {
+    margin-top: 0;
+    color: var(--muted);
+}
+
+.roadmap-list {
+    list-style: decimal-leading-zero outside;
+    margin: 20px 0 0;
+    padding: 0 0 0 28px;
+}
+
+.roadmap-list li {
+    margin: 10px 0;
+    padding: 13px 15px;
+    border: 1px solid #e5e7ff;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.roadmap-list li::marker {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.roadmap-list li > span:last-child {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.roadmap-list strong {
+    color: #312e81;
+}
+
+.roadmap-list small {
+    color: var(--muted);
+    font-size: 0.88rem;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    color: #4338ca;
+    background: #eef2ff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+code {
+    padding: 2px 5px;
+    border-radius: 5px;
+    background: #f1f5f9;
+    font-size: 0.9em;
+}
+
+.note {
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: 0.88rem;
+}
+
+footer {
+    padding: 18px 8px 6px;
+    color: var(--muted);
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 18px 12px;
+    }
+
+    .page-header,
+    .demo-card {
+        padding: 21px 18px;
+    }
+
+    .position-grid {
+        grid-template-columns: 1fr;
+    }
+}
