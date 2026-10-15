@@ -1,0 +1,58 @@
+
+/* Thiết lập màu nền cho toàn bộ trang web */
+body {
+    background-color: #e6f2ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Định dạng tiêu đề */
+h1 {
+    color: #003366;
+    text-align: center;
+}
+
+/* Định dạng đoạn văn */
+p {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Tạo khối nội dung có ảnh nền */
+.noidung {
+    background-color: #ffffff;
+    background-image: url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 300px;
+    margin: 30px auto;
+    padding: 30px;
+
+    /* Căn giữa nội dung trong khối */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+/* Định dạng tiêu đề trong khối */
+.noidung h2 {
+    font-size: 30px;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Định dạng đoạn văn trong khối */
+.noidung p {
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
