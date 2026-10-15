@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành: Bảng trong CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <header class="hero">
+            <p class="eyebrow">THỰC HÀNH HTML &amp; CSS</p>
+            <h1>Bảng trong CSS</h1>
+            <p>Thực hành đường viền, kích thước, căn chỉnh, khoảng cách và màu sắc cho bảng HTML.</p>
+        </header>
+
+        <section class="panel">
+            <div class="section-heading">
+                <span class="number">01</span>
+                <div>
+                    <h2>Bảng thông tin học viên</h2>
+                    <p>Bảng mẫu sử dụng đầy đủ các thuộc tính CSS trong bài học.</p>
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <caption>Danh sách học viên lớp Web</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Họ và tên</th>
+                            <th scope="col">Tuổi</th>
+                            <th scope="col">Lớp</th>
+                            <th scope="col">Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nguyễn Văn A</td>
+                            <td class="age">20</td>
+                            <td>Web</td>
+                            <td><span class="status active">Đang học</span></td>
+                        </tr>
+                        <tr>
+                            <td>Trần Thị B</td>
+                            <td class="age">21</td>
+                            <td>Web</td>
+                            <td><span class="status active">Đang học</span></td>
+                        </tr>
+                        <tr>
+                            <td>Lê Minh C</td>
+                            <td class="age">19</td>
+                            <td>Web</td>
+                            <td><span class="status complete">Hoàn thành</span></td>
+                        </tr>
+                        <tr>
+                            <td>Phạm Thu D</td>
+                            <td class="age">22</td>
+                            <td>Web</td>
+                            <td><span class="status active">Đang học</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="note">Trên màn hình nhỏ, bạn có thể cuộn ngang trong khu vực bảng để xem tất cả các cột.</p>
+        </section>
+
+        <section class="panel">
+            <div class="section-heading">
+                <span class="number">02</span>
+                <div>
+                    <h2>Thuộc tính CSS đã áp dụng</h2>
+                    <p>Các thuộc tính chính được dùng để định dạng bảng.</p>
+                </div>
+            </div>
+            <ul class="feature-list">
+                <li><code>border</code><span>Tạo đường viền cho bảng và từng ô.</span></li>
+                <li><code>border-collapse: collapse</code><span>Gộp đường viền liền kề thành một đường.</span></li>
+                <li><code>width</code> và <code>height</code><span>Điều chỉnh chiều rộng bảng và chiều cao hàng.</span></li>
+                <li><code>text-align</code><span>Căn nội dung theo chiều ngang.</span></li>
+                <li><code>vertical-align</code><span>Căn nội dung theo chiều dọc.</span></li>
+                <li><code>padding</code><span>Tạo khoảng cách giữa nội dung và đường viền ô.</span></li>
+                <li><code>background-color</code> và <code>color</code><span>Định dạng màu nền và màu chữ.</span></li>
+            </ul>
+        </section>
+
+        <footer>Hoàn thành bài thực hành Bảng trong CSS · HTML + CSS thuần</footer>
+    </main>
+</body>
+</html>
